@@ -1,0 +1,10 @@
+def menu ():
+    print("Bienvenido")
+    print("Por favor elija una opcion: ")
+    print("1. Suma")
+    print("2. Resta")
+    print("3. Multiplicacion")
+    print("4. Division")
+    print("5. Km a Millas")
+    print("6. Fahrenheit a celsius")
+    print("7. Salida")
