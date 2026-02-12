@@ -1,5 +1,5 @@
 def menu ():
-    print("Bienvenido")
+    print("¡Bienvenido a la Calculadora Mágica!")
     print("Por favor elija una opcion: ")
     print("1. Suma")
     print("2. Resta")
