@@ -2,18 +2,18 @@ from calculadora import suma, resta, multiplicacion, division
 from menu import menu
 from utilidades import fahrenheit_celsius, km_millas
 from datetime import datetime
-from math import sqrt, pow, log, exp
+from math import sqrt, pow, log, exp, tan, cos, sin, radians
 
 if __name__ == "__main__":
     date= datetime.now() # Se obtiene la fecha y hora actual
     print("Fecha y hora actual:", date.strftime("%d/%m/%Y %H:%M:%S")) # Se muestra la fecha y hora actual
 
     opcion = 0
-    while opcion != 11:
+    while opcion != 14: # El programa se ejecuta hasta que el usuario elija la opcion 14 para salir
         menu() # Se manda a llamar la funcion "menu" para mostrarle las opciones al usuario
         opcion = int(input("Ingresar opcion: ")) # Solicitar al usuario una opcion
         
-        if opcion < 1 or opcion > 11: # Verificar que la opcion elegida sea valida
+        if opcion < 1 or opcion > 14: # Verificar que la opcion elegida sea valida
             print("Opcion incorrecta, seleccione otra opcion")
 
         elif opcion == 1:
@@ -70,6 +70,25 @@ if __name__ == "__main__":
             print("Has elegido la conversion de fahrenheit a celsius")
             n1 = float(input("Favor de ingresar el numero de los fahrenheit: "))
             print(f"El resultado de los fahrenheit a celsius es: {fahrenheit_celsius(n1)}")
+        
+# Para las opciones 11, 12 y 13, se solicita al usuario un numero pero primero se convierte ese numero a radianes. Porque las funciones trigonometricas en python trabajan con radianes, por lo que es necesario convertir el numero ingresado a radianes.
+        elif opcion == 11:
+            print("Has elegido el camino de la tangente")
+            n1 = float(input("Favor de ingresar el numero para sacar su tangente: "))
+            rad = radians(n1) # Se convierte el numero ingresado a radianes para poder calcular su tangente
+            print(f"El resultado de la tangente es: {tan(rad)}")
             
-        elif opcion == 11: # Si el usuario elige la opcion 7, el programa se termina.
+        elif opcion == 12:
+            print("Has elegido el camino del seno")
+            n1 = float(input("Favor de ingresar el numero para sacar su seno: "))
+            rad = radians(n1) # Se convierte el numero ingresado a radianes para poder calcular su seno
+            print(f"El resultado del seno es: {sin(rad)}")
+
+        elif opcion == 13:
+            print("Has elegido el camino del coseno")
+            n1 = float(input("Favor de ingresar el numero para sacar su coseno: "))
+            rad = radians(n1) # Se convierte el numero ingresado a radianes para poder calcular su coseno
+            print(f"El resultado del coseno es: {cos(rad)}")
+
+        elif opcion == 14: # Si el usuario elige la opcion 14, el programa se termina.
             print("Has elegido salir")

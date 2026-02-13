@@ -1,5 +1,5 @@
 def menu ():
-    print("¡Bienvenido a la Calculadora Mágica!")
+    print("¡BIENVENIDO A LA CALCULADORA MÁGICA!")
     print("Por favor elija una opcion: ")
     print("1. Suma")
     print("2. Resta")
@@ -11,4 +11,7 @@ def menu ():
     print("8. Exponencial")
     print("9. Km a Millas")
     print("10. Fahrenheit a celsius")
-    print("11. Salida")
+    print("11. Tangente")
+    print("12. Seno")
+    print("13. Coseno")
+    print("14. Salida")
