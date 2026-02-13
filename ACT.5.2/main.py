@@ -38,12 +38,12 @@ if __name__ == "__main__":
             print("Has elegido el camino de la division")
             n1 = float(input("Favor de ingresar el primer numero a dividir: "))
             n2 = float(input("Favor de ingresar el segundo numero a dividir: "))
-            print(f"El resultado de la division es: {division(n1, n2)}")
+            print(f"El resultado de la division es: {division(n1, n2):.4f}")
         
         elif opcion == 5:
             print("Has elegido el camino de la raiz cuadrada")
             n1 = float(input("Favor de ingresar el numero para sacar su raiz cuadrada: "))
-            print(f"El resultado de la raiz cuadrada es: {sqrt(n1)}")
+            print(f"El resultado de la raiz cuadrada es: {sqrt(n1):.4f}")
         
         elif opcion == 6:
             print("Has elegido el camino de la potencia")
@@ -54,12 +54,12 @@ if __name__ == "__main__":
         elif opcion == 7:
             print("Has elegido el camino del logaritmo")
             n1 = float(input("Favor de ingresar el numero para sacar su logaritmo: "))
-            print(f"El resultado del logaritmo es: {log(n1)}")
+            print(f"El resultado del logaritmo es: {log(n1):.4f}")
         
         elif opcion == 8:
             print("Has elegido el camino de la exponencial")
             n1 = float(input("Favor de ingresar el numero para sacar su exponencial: "))
-            print(f"El resultado de la exponencial es: {exp(n1)}")
+            print(f"El resultado de la exponencial es: {exp(n1):.4f}")
             
         elif opcion == 9:
             print("Has elegido la conversion de km a millas: ")
@@ -76,19 +76,19 @@ if __name__ == "__main__":
             print("Has elegido el camino de la tangente")
             n1 = float(input("Favor de ingresar el numero para sacar su tangente: "))
             rad = radians(n1) # Se convierte el numero ingresado a radianes para poder calcular su tangente
-            print(f"El resultado de la tangente es: {tan(rad)}")
+            print(f"El resultado de la tangente es: {tan(rad):.4f}")
             
         elif opcion == 12:
             print("Has elegido el camino del seno")
             n1 = float(input("Favor de ingresar el numero para sacar su seno: "))
             rad = radians(n1) # Se convierte el numero ingresado a radianes para poder calcular su seno
-            print(f"El resultado del seno es: {sin(rad)}")
+            print(f"El resultado del seno es: {sin(rad):.4f}")
 
         elif opcion == 13:
             print("Has elegido el camino del coseno")
             n1 = float(input("Favor de ingresar el numero para sacar su coseno: "))
             rad = radians(n1) # Se convierte el numero ingresado a radianes para poder calcular su coseno
-            print(f"El resultado del coseno es: {cos(rad)}")
-
+            print(f"El resultado del coseno es: {cos(rad):.4f}") # Se muestra el resultado del coseno con 4 decimales        
+        
         elif opcion == 14: # Si el usuario elige la opcion 14, el programa se termina.
             print("Has elegido salir")
